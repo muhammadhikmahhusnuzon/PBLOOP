@@ -1,3 +1,9 @@
 body {
     background-color: blue;
+    font-size: large;
+    font-style: normal;
+}
+
+#submit-form {
+    font-style: italic;
 }
