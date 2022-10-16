@@ -41,23 +41,38 @@
                 <div id="login-column" class="col-md-6">
                     <div id="login-box" class="col-md-12">
                         <form id="login-form" class="form" action="" method="post">
-                            <h2 class="text-center text-white">Selamat Datang di Website E-TLE</h2>
-                            <img src="assets/img/bg-round.png" alt="Polisi" class="center" width="200" height="210">
-                            <h4 class="text-center text-white">Login</h4>
+                            <h4 class="text-center text-white">Pendaftaran Akun E-TLE</h4>
                             <div class="form-group">
-                                <label for="username" class="text-light">Username:</label><br>
+                                <label for="nama" class="text-light">Nama</label>
+                                <input type="text" name="nama" id="nama" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="nama" class="text-light">Alamat</label>
+                                <input type="text" name="nama" id="nama" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="username" class="text-light">NIK</label>
                                 <input type="text" name="username" id="username" class="form-control">
                             </div>
                             <div id="password" class="form-group">
-                                <label form="password" class="text-light">Password:</label><br>
-                                <input type="password" name="password" id="password" class="form-control">
+                                <label form="password" class="text-light">Nomor Polisi</label><br>
+                                <input type="text" name="password" id="password" class="form-control">
+                            </div>
+                            <div class="form-check">
+                                <label form="jenis-kendaraan" class="text-light">Jenis Kendaraan</label><br>
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                <label class="form-check-label text-light" for="flexRadioDefault1">
+                                  Default radio
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                <label class="form-check-label text-light" for="flexRadioDefault2">
+                                  Default checked radio
+                                </label>
                             </div>
                             <div class="form-group">
-                                <label form="remember-me" class="text-light"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
                                 <button id="submit-form" type="submit" name="submit" class="btn btn-primary btn-md bg text-light" value="submit">Submit</button>
-                            </div>
-                            <div id="register-link" class="text-right">
-                                <a href="regis.html" class="btn btn-success text-light">Register here</a>
                             </div>
                         </form>
                     </div>
