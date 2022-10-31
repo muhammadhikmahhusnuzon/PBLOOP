@@ -32,26 +32,7 @@
 
 </head>
 
-<script>
-    function verifyPassword() {
-        var pw = document.getElementById("password").value;
-        //check empty password field
-    }
-    if (pw == "") {
-        document.getElementById("message").innerHTML = "**Fill the password please!";
-        return false;
-    }
-
-    //minimum password length validation
-    if (pw.length < 8) {
-        document.getElementById("message").innerHTML = "**Password length must be atleast 8 characters";
-        return false;
-    }
-</script>
-
 <body class="bg-gradient-warning">
-
-    <form onsubmit="return verifyPassword()"></form>
     <div id="login">
         <h3 class="text-center pt-5 text-white"></h3>
         <div class="container">
@@ -63,16 +44,15 @@
                             <img src="assets/img/bg-round.png" alt="Polisi" class="center" width="200" height="210">
                             <h4 class="text-center text-white">Login</h4>
                             <div class="form-group">
-                                <label form="username" class="text-light">Username:</label><br>
+                                <label for="username" class="text-light">Username:</label><br>
                                 <input type="text" name="username" id="username" class="form-control" placeholder="Username">
                             </div>
                             <div id="password" class="form-group">
-                                <label form="password" class="text-light">Password:</label><br>
-                                <input type="password" name="password" id="password" class="form-control" placeholder="Password" value="">
-                                <span id="message" style="color:red"> </span> <br><br>
-                            </div>
+                                <label for="password" class="text-light">Password:</label><br>
+                                <input type="password" name="password" id="password" class="form-control" placeholder="Password" value="" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Harus menggunakan minimal satu angka dan satu huruf kapital dan huruf kecil, dan minimal delapan karakter"
+                                    required> </div>
                             <div class="form-group">
-                                <label form="remember-me" class="text-light"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
+                                <label for="remember-me" class="text-light"><span>Remember me</span> <span><input id="remember-me" name="remember-me" type="checkbox"></span></label><br>
                                 <button id="reset" name="Reset" type="reset" value="reset" class="btn btn-primary btn-md bg text-light">Reset </button>
                                 <input id="submit-form" type="submit" name="submit" class="btn btn-primary btn-md bg text-light" value="Submit"></input>
                             </div>
